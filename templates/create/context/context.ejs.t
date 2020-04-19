@@ -1,5 +1,7 @@
 ---
 to: src/context/<%= name %>Context.tsx
+sh: prettier --write src/context/<%= name %>Context.tsx && eslint --fix src/context/<%= name %>Context.tsx
+
 ---
 <% classified = h.inflection.classify(name) -%>
 import React, { useContext } from 'react'
