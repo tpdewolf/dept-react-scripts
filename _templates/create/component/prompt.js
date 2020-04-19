@@ -6,12 +6,6 @@ module.exports = [
     choices: ['atom', 'molecule', 'organism', 'template'],
   },
   {
-    type: 'input',
-    name: 'componentType',
-    message: 'Functional(f) or Class(c)',
-    default: 'f',
-  },
-  {
     type: 'confirm',
     name: 'withStorybook',
     message: 'Add a storybook story?',

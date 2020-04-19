@@ -1,6 +1,7 @@
 ---
-to: "<%= withStorybook ? `src/components/${h.inflection.pluralize(kind)}/${Name}/${Name}.stories.tsx` : null %>"
+to: "<%= withStorybook ? `src/components/${h.inflection.pluralize(kind)}/${path}${h.inflection.camelize(name)}/${h.inflection.camelize(name)}.stories.tsx` : null %>"
 ---
+<% Name = h.inflection.camelize(name) %>
 import React from 'react'
 
 import { <%= Name %> } from './<%= Name %>'
