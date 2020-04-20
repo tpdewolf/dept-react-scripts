@@ -33,7 +33,7 @@ program
       fs.writeFileSync(projectFilePath, JSON.stringify(projectObject), 'utf-8')
       execSync(`npx prettier --write ${projectFilePath}`)
       execSync(
-        `git init && git add . && git commit -am "Initialized project with dept-react-scripts"`,
+        `git init && git add . && git commit -am "Initialized project with dept-react-scripts" && yarn`,
         {
           cwd: projectName,
         },
@@ -44,6 +44,8 @@ program
           `${process.cwd()}/${projectName}`,
         )}`,
       )
+
+      console.log(`Run ${chalk.yellow(`yarn dev`)} to start the development server.`)
     } catch (err) {
       console.error(chalk.red('Something went wrong while initializing project.'))
     }
