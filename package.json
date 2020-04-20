@@ -17,7 +17,8 @@
     }
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "type-check": "tsc --noEmit"
   },
   "bin": {
     "dept-react": "./dist/bin/dept-react-scripts.js"
@@ -25,6 +26,8 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
+    "case": "^1.6.3",
+    "chalk": "^4.0.0",
     "commander": "^5.0.0",
     "enquirer": "^2.3.5",
     "eslint": "^6.8.0",
