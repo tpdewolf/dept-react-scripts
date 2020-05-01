@@ -16,36 +16,32 @@
       "pre-push": "yarn type-check"
     }
   },
-  "scripts": {
-    "build": "tsc",
-    "type-check": "tsc --noEmit"
-  },
   "bin": {
-    "dept-react": "./dist/bin/dept-react-scripts.js"
+    "dept-react-scripts": "./bin/dept-react-scripts.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
-    "@typescript-eslint/parser": "^2.27.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
     "case": "^1.6.3",
     "chalk": "^4.0.0",
-    "commander": "^5.0.0",
+    "commander": "^5.1.0",
     "enquirer": "^2.3.5",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-simple-import-sort": "^5.0.2",
     "hygen": "^5.0.3",
-    "prettier": "^2.0.4",
+    "prettier": "^2.0.5",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "@types/node": "^13.13.0",
+    "@types/node": "^13.13.4",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.6"
+    "lint-staged": "^10.2.2"
   }
 }
