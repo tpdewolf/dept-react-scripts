@@ -1,6 +1,7 @@
+const path = require('path');
+
 const { runner } = require('hygen');
 const Logger = require('hygen/lib/logger');
-const path = require('path');
 const defaultTemplates = path.join(__dirname, '../templates');
 
 function runHygen({ generator, filename, path = '' }) {

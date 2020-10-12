@@ -1,7 +1,8 @@
-const Case = require('case')
-const chalk = require('chalk')
 const { execSync } = require('child_process')
 const fs = require('fs')
+
+const Case = require('case')
+const chalk = require('chalk')
 
 function create(name) {
   try {

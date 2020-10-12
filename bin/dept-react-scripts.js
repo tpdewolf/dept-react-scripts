@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 const { program } = require('commander')
 
-const { create } = require('../commands/create')
-const { route } = require('../commands/route')
 const { component } = require('../commands/component')
 const { context } = require('../commands/context')
+const { create } = require('../commands/create')
 const { eslintEject } = require('../commands/eslint-eject')
-
+const { route } = require('../commands/route')
 const packageJson = require('../package.json')
 
 program.version(packageJson.version)

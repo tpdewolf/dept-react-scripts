@@ -1,7 +1,9 @@
-const { Confirm } = require('enquirer')
 const fs = require('fs')
-const execa = require('execa')
 const path = require('path')
+
+const { Confirm } = require('enquirer')
+const execa = require('execa')
+
 
 async function eslintEject() {
   const confirm = new Confirm({
