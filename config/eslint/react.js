@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: [require.resolve('./index')],
+  extends: [require.resolve('./config/eslint/index.js')],
   plugins: ['react-hooks'],
   settings: {
     react: {
