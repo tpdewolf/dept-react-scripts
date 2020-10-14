@@ -1,17 +1,14 @@
 'use strict';
 
 module.exports = {
-  extends: [require.resolve('./base')],
+  extends: [require.resolve('./index')],
   plugins: ['react-hooks'],
   settings: {
     react: {
       version: 'detect',
     },
   },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:jsx-a11y/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'plugin:jsx-a11y/recommended'],
   rules: {
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
