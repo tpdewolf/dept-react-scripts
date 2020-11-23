@@ -4,7 +4,7 @@ sh: prettier --write src/context/<%= name %>Context.tsx && eslint --fix src/cont
 
 ---
 <% classified = h.inflection.classify(name) -%>
-import React, { useContext } from 'react'
+import { FC, useContext } from 'react'
 
 export interface <%= classified %>ContextStore {}
 
@@ -18,7 +18,7 @@ export const use<%= classified %> = () => {
 }
 
 // add <%= classified %>ContextProvider to ContextProvider
-export const <%= classified %>ContextProvider: React.FC = ({children}) => {
+export const <%= classified %>ContextProvider: FC = ({children}) => {
   const store: <%= classified %>ContextStore = {}
 
   return <<%= classified %>Context.Provider value={store}>{ children }</<%= classified %>Context.Provider>

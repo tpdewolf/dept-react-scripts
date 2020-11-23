@@ -4,7 +4,7 @@ sh: prettier --write src/components/<%= h.inflection.pluralize(kind) %>/<%= path
 ---
 <% Name = h.inflection.camelize(name) %>
 import { render } from '@test/utils'
-import React from 'react'
+import * as React from 'react'
 
 import { <%= Name %> } from './<%= Name %>'
 

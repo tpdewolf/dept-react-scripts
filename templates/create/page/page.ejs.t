@@ -5,7 +5,6 @@ sh: prettier --write src/pages/<%= name %>.tsx && eslint --fix src/pages/<%= nam
 <% classified = h.inflection.classify(name) -%>
 import { <% if(dataFetching === 'SSR'){ -%>GetServerSideProps, <% } -%><% if(dataFetching === 'Static'){ -%>GetStaticPaths, GetStaticProps, <% } -%>NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import React from 'react'
 
 interface PageProps {}
 
