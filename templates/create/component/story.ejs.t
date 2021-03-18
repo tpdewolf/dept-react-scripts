@@ -6,6 +6,6 @@ import * as React from 'react'
 
 import { <%= Name %> } from './<%= Name %>'
 
-export default { title: '<%= h.capitalize(h.inflection.pluralize(kind)) %>/<%= Name %>', component: <%= Name %> }
+export default { title: '<%= path %>/<%= Name %>', component: <%= Name %> }
 
 export const Example = () => <<%= Name %>></<%= Name %>>
