@@ -3,8 +3,9 @@ to: "<%= withTest ? `src/components/${path}${h.inflection.camelize(name)}/${h.in
 sh: prettier --write src/components/<%= path %><%= h.inflection.camelize(name) %>/* && eslint --fix src/components/<%= path %><%= h.inflection.camelize(name) %>/**
 ---
 <% Name = h.inflection.camelize(name) %>
-import { render } from '@test/utils'
 import * as React from 'react'
+
+import { render } from '@test/utils'
 
 import { <%= Name %> } from './<%= Name %>'
 
