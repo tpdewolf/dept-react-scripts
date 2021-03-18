@@ -49,8 +49,6 @@ const Page: NextPage<PageProps> = (props) => {
   )
 }
 
-
-
 export default Page
 
 

@@ -8,4 +8,4 @@ import { <%= Name %> } from './<%= Name %>'
 
 export default { title: '<%= h.capitalize(h.inflection.pluralize(kind)) %>/<%= Name %>', component: <%= Name %> }
 
-export const example = () => <<%= Name %>></<%= Name %>>
+export const Example = () => <<%= Name %>></<%= Name %>>
